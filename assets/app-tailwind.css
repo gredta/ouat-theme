@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Voltra';
+  src: url("{{ 'Voltra-Extra-Light.woff2' | asset_url }}") format('woff2'),
+    url("{{ 'Voltra-Extra-Light.woff' | asset_url }}") format('woff'),
+    url("{{ 'Voltra-Extra-Light.otf' | asset_url }}") format('opentype');
+  font-weight: 200; /* Extra Light */
+  font-style: normal;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.header__heading-link {
+  font-family: 'Voltra', sans-serif;
+  font-weight: 200;
+}
+
+/* Make all headings use Voltra Extra Light */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Voltra', sans-serif !important;
+  font-weight: 200 !important;
+}
+
+:root {
+  --font-body-family: 'Voltra', sans-serif;
+  --font-body-weight: 200;
+  --font-body-style: normal;
+
+  --font-heading-family: 'Voltra', sans-serif;
+  --font-heading-weight: 200;
+  --font-heading-style: normal;
+}
