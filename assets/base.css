@@ -3681,3 +3681,11 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+@font-face {
+  font-family: 'Voltra';
+  src: url('{{ "Voltra-Extra-Light.woff2" | file_url }}') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
